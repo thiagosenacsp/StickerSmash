@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text } from "react-native";
 export default function IconButton({ icon, label, onPress }) {
   return (
     <Pressable style={styles.iconButton} onPress={onPress}>
-      <MaterialIcons name={icon} size={24} color="#FFF" />
+      <MaterialIcons name={icon} size={24} color="#25292E" />
       <Text style={styles.iconButtonLabel}>{label}</Text>
     </Pressable>
   );
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   iconButtonLabel: {
-    color: "#FFF",
+    color: "#25292E",
     marginTop: 12,
   },
 });

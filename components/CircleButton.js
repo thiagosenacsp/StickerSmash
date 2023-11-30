@@ -5,7 +5,7 @@ export default function CircleButton({ onPress }) {
   return (
     <View style={styles.circleButtonContainer}>
       <Pressable style={styles.circleButton} onPress={onPress}>
-        <MaterialIcons name="add" size={38} color={"#25292E"} />
+        <MaterialIcons name="add" size={38} color={"#FFF"} />
       </Pressable>
     </View>
   );
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     height: 84,
     marginHorizontal: 60,
     borderWidth: 4,
-    borderColor: "#FFD33D",
+    borderColor: "#1e1e1e",
     borderRadius: 42,
     padding: 3,
   },
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 42,
-    backgroundColor: "#FFF",
+    backgroundColor: "#25292E",
   },
 });

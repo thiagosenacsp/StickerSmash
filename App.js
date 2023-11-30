@@ -39,7 +39,7 @@ export default function App() {
       selectedImage(result.assets[0].uri);
       setShowAppOptions(true);
     } else {
-      alert("You did not select any image.");
+      alert("Nenhuma foto selecionada.");
     }
   };
 
@@ -63,7 +63,7 @@ export default function App() {
       });
       await MediaLibrary.saveToLibraryAsync(localUri);
       if (localUri) {
-        alert("Saved");
+        alert("Salvo.");
       }
     } catch (e) {
       console.log(e);
@@ -86,11 +86,11 @@ export default function App() {
       {showAppOptions ? (
         <View style={styles.optionsContainer}>
           <View style={styles.optionsRow}>
-            <IconButton icon="refresh" label="Reset" onPress={onReset} />
+            <IconButton icon="refresh" label="Resetar" onPress={onReset} />
             <CircleButton onPress={onAddSticker} />
             <IconButton
               icon="save-alt"
-              label="Save"
+              label="Salvar"
               onPress={onSaveImageAsync}
             />
           </View>
@@ -99,11 +99,11 @@ export default function App() {
         <View style={styles.footerContainer}>
           <Button
             theme="primary"
-            label="Choose a photo"
+            label="Escolha uma foto"
             onPress={pickImageAsync}
           />
           <Button
-            label="Use this photo"
+            label="Use esta foto"
             onPress={() => setShowAppOptions(true)}
           />
         </View>
@@ -119,7 +119,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#25292E",
+    backgroundColor: "#FFF",
     alignItems: "center",
   },
   imageContainer: {

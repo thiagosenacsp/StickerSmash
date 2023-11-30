@@ -11,16 +11,16 @@ export default function Button({ label, theme, onPress }) {
         ]}
       >
         <Pressable
-          style={[styles.button, { backgroundColor: "#FFF" }]}
+          style={[styles.button, { backgroundColor: "#25292E" }]}
           onPress={onPress}
         >
           <FontAwesome
             name="picture-o"
             size={18}
-            color="#25292E"
+            color="#FFF"
             style={styles.buttonIcon}
           />
-          <Text style={[styles.buttonLabel, { color: "#25292E" }]}>
+          <Text style={[styles.buttonLabel, { color: "#FFF" }]}>
             {label}
           </Text>
         </Pressable>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     paddingRight: 8,
   },
   buttonLabel: {
-    color: "#FFF",
+    color: "#25292E",
     fontSize: 16,
   },
 });
